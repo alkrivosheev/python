@@ -11,3 +11,4 @@ print(mean([1, 5, 6, 8]))
 student_grades = {"Marry": 9.1, "Sim": 8.8, "john": 7.5}
 print(mean(student_grades))
 print(mean(1))#test
+print(hello test)
