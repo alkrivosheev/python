@@ -17,5 +17,5 @@ results = cursor.fetchall()
 if results:
     for result in results:
         print(result[1])
-    else:
-        print("Not faund")
+else:
+    print("Not found")
