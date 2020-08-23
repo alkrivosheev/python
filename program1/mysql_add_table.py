@@ -9,7 +9,7 @@ con = mysql.connector.connect(
 )
 
 cursor = con.cursor()
-# query = cursor.execute("CREATE TABLE Dictionary(Expression VARCHAR(100) NOT NULL,  Definition VARCHAR(1000) NOT NULL)")
+# query = cursor.execute("CREATE TABLE Dictionary(Expression varbinary(100) NOT NULL,  Definition varbinary(5000) NOT NULL)")
 
 # cursor.execute("INSERT INTO new_base.Dictionary (Expression, Definition) VALUES ('hello', 'This is text hello');")
 # con.commit()

@@ -12,8 +12,8 @@ con = mysql.connector.connect(
 )
 
 cursor = con.cursor()
-# query = cursor.execute("CREATE TABLE Dictionary(Expression varbinary(100) NOT NULL,  Definition varbinary(5000) NOT NULL)")
-cursor.execute("TRUNCATE TABLE new_base.Dictionary;")
+query = cursor.execute("CREATE TABLE Dictionary(Expression varbinary(100) NOT NULL,  Definition varbinary(5000) NOT NULL)")
+# cursor.execute("TRUNCATE TABLE new_base.Dictionary;")
 con.commit()
 for item in data:
     # if item == 'field':
