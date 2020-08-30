@@ -1,4 +1,4 @@
-import psycopg2
+import psycopg2 #  sudo apt-get install libpq-dev; pip3 install psycopg2
 
 def create_table():
     conn = psycopg2.connect("dbname='new_base' user='postgres' password='example' host='localhost' port='5432'")
@@ -38,7 +38,7 @@ def update(quantity,price,item):
 
 
 # create_table()
-# insert("Coffe3",4,10.5)
+insert("Coffe3",4,10.5)
 # update(9,18,"Coffe2")
-delete("Coffe3")
+# delete("Coffe3")
 print(view())
