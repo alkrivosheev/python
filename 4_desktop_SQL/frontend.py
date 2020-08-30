@@ -1,3 +1,5 @@
+# For standalone executable - pip3 install pyinstaller
+# And call pyinstaller --onefile --windowed frontend.py
 from tkinter import *
 import backend
 
