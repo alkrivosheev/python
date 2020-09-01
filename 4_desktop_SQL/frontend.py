@@ -1,6 +1,6 @@
 # For standalone executable - pip3 install pyinstaller
 # And call pyinstaller --onefile --windowed frontend.py
-from tkinter import *
+from tkinter import *#apt-get install python3-tk
 import backend
 
 def get_selected_row(event):
