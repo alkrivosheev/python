@@ -1,4 +1,4 @@
-import cv2, time
+import cv2, time#pip install opencv-python
 
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 video = cv2.VideoCapture(0)
