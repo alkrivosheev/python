@@ -9,18 +9,19 @@ def get_html(url, useragent=None, proxy=None):
 
 def get_ip(html):
     soup = BeautifulSoup(html, 'lxml')
-    ip = soup.find('span', class_='ip').text.strip()
-    ua = soup.find('span', class_='ip').find_next_sibling('span').text.strip()
+    ip = soup.find('div', class_='ip').text.strip()
+    ua = soup.find('div', class_='details_browser_data').text.strip()
     print(ip)
     print(ua)
     print("..........................")
 
 def main():
-    url = 'http://sitespy.ru/my-ip'
+    # url = 'http://sitespy.ru/my-ip'
+    url = 'http://hidemy.name/ru/what-is-my-ip/'
     useragents = open('useragents.txt').read().split('\n')
     proxies = open('proxies').read().split('\n')
 
-    for i in range(10):
+    for i in range(5):
         proxy = {'http': 'http://' + choice(proxies)}
         useragent = {'User-Agent': choice(useragents)}
         try: 
